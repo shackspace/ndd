@@ -9,7 +9,7 @@
 #
 
 use strict;
-my @cmd_nmap = qw(snmpwalk -v2c -c <community> 10.42.0.1 1.3.6.1.2.1.3.1.1.2);
+my @cmd_nmap = qw(snmpwalk -v2c -c shammunity 10.42.0.1 1.3.6.1.2.1.3.1.1.2);
 my $OUISRC = "http://standards.ieee.org/develop/regauth/oui/oui.txt";
 my %Devices = ();
 my %oui = ();
