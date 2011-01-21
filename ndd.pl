@@ -22,7 +22,6 @@ if(!-e "oui.txt")
 open NMAP,"-|",@cmd_nmap or die "cannot run '@cmd_nmap':$!";
 while(<NMAP>){
 	chomp;
-	#if(/^Host/){
 	if(/(\d+\.\d+\.\d+\.\d+) = Hex-STRING:((\s[0-9A-Z]{2}){6})/){
 		my $hstring = $2;
 		$hstring =~ s/\s//g;
