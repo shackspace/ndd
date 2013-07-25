@@ -1,6 +1,5 @@
 ndd
 network device discovery
-(c) 2011 hadez@nrrd.de
 
 this script dumps the ARP table of a cisco switch and uses the publicly available oui.txt[1] to check what device a given MAC belongs to.
 
